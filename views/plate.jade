@@ -1,0 +1,25 @@
+extends layout
+
+block header
+  header#age-header
+    .age-container.am-cf
+      h1
+        a(href='#') 上古世纪工具
+        span.am-badge.am-badge-danger 1.0
+      nav
+        ul.age-header-nav.am-collapse
+          li.am-active
+            a(href='/plate') 板甲打造
+          li
+            a(href='/leather') 皮甲打造
+          li
+            a(href='/') 布甲打造
+          li
+            a(href='/') 武器打造
+          li
+            a(href='/') 材料录入
+block section
+  section#age-main
+    .am-g.am-g-fixed
+      include condition
+      #calculateResult

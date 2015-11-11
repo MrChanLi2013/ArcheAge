@@ -1,0 +1,164 @@
+#age-header {
+    width: 100%;
+    background: #0e90d2;
+}
+
+.age-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+@media only screen and (min-width: 641px) {
+    .age-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem
+    }
+}
+
+#age-header h1 {
+    position: relative;
+    margin: 0;
+    float: left;
+    font-weight: 400;
+    font-size: 20px;
+    font-variant: small-caps
+}
+
+#age-header h1 .am-badge {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: .25em .4em;
+    font-weight: 100;
+}
+
+#age-header a {
+    color: #fff;
+    display: block;
+    line-height: 50px;
+}
+
+#age-header h1 a {
+    display: block;
+    height: 50px;
+    width: 165px;
+}
+
+#age-header nav {
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both
+}
+
+#age-header nav a {
+    position: relative;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #f2f2f2;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #age-header nav a {
+        padding: 0 12px
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    #age-header ul {
+        display: block
+    }
+
+    #age-header nav {
+        float: right;
+        clear: none;
+        margin: 0
+    }
+
+    #age-header ul li {
+        float: left
+    }
+}
+
+#age-header nav a:hover {
+    background: rgba(0, 0, 0, .1);
+    color: #fff
+}
+
+#age-header nav .am-active a {
+    background: #0b76ac;
+    color: #fff
+}
+
+.age-footer {
+    background: #555;
+    color: #999;
+    padding: 10px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#age-main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 641px) {
+    .age-header-nav li {
+        position: relative
+    }
+
+    .age-header-nav .am-active a:after {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        content: "";
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border-color: transparent transparent #ededed;
+        border-style: none solid solid;
+        border-width: 0 8px 8px
+    }
+}
+
+.age-footer .age-social {
+    margin-bottom: 10px
+}
+
+.age-footer p {
+    font-size: 12px;
+}
+
+.age-footer .age-social li {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.age-footer .age-social li:first-child {
+    margin-left: 0
+}
+
+.age-footer .age-social a {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #999;
+    color: #555;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 50%;
+    -webkit-transition: .15s;
+    transition: .15s
+}
+
+.age-footer .age-social a:hover {
+    background: #eee
+}

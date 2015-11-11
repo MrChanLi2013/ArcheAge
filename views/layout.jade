@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/base/amazeui.css')
+    link(rel='stylesheet', href='/stylesheets/archeAge.css')
+  body
+    block header
+    block section
+    include partial/_footer
+    script(src='/javascripts/base/jquery.min.js')
+    script(src='/javascripts/base/jquery.form.js')
+    script(src='/javascripts/base/amazeui.js')
+    script(src='/javascripts/archeAge.js')
