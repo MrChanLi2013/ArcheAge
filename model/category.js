@@ -17,3 +17,5 @@ var Category = dbUtil.getConnection().define(
 
 //创建表
 Category.sync({force: false});
+
+exports.Category = Category;

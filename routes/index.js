@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Category = require('.././model/category');
+var Model = require('.././model/category');
 
 /* GET 板甲打造. */
 router.get('/plate', function(req, res, next) {
@@ -26,7 +26,7 @@ router.post('/calculate', function (req, res, next) {
   var category = req.body.category;
   var level = req.body.level;
   var number = req.body.number;
-  Category.findOne().then(function (user) {
+  Model.Category.findByPrimary(1).then(function (user) {
     console.log(user.name);
   });
   res.render('partial/_panel');
