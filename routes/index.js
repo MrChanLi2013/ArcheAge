@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Category = require('./model/category');
+var Category = require('.././model/category');
 
 /* GET 板甲打造. */
 router.get('/plate', function(req, res, next) {

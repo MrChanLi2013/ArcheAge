@@ -1,4 +1,4 @@
-var dbUtil = require("../db/sequelize");
+var dbUtil = require(".././db/sequelize");
 var Sequelize = require('sequelize');
 
 var Category = dbUtil.getConnection().define(
@@ -16,4 +16,4 @@ var Category = dbUtil.getConnection().define(
 );
 
 //创建表
-Category.sync({force: true});
+Category.sync({force: false});
