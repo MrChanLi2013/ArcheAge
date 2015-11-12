@@ -8,8 +8,8 @@ router.post("/all",function (req, res, next) {
             return l.dataValues;
         });
 
-        res.render('partial/_category',{
-            categories: levelsArray
+        res.render('partial/_level',{
+            levels: levelsArray
         });
     });
 });
