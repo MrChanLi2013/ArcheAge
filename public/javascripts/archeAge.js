@@ -1,11 +1,18 @@
 $(function () {
     $("#js-calculate-btn").click(function () {
-        console.info(111222);
         $("#js-calculate-form").ajaxSubmit({
             target: "#calculateResult",
             success: function () {
                 $('#calculateResult').fadeIn('slow');
             }
         })
+    });
+
+    $.post("/category/all",{}, function (data) {
+        $('#category').html(data);
+    });
+
+    $.post("/level/all",{}, function (data) {
+        $('#level').html(data);
     });
 });

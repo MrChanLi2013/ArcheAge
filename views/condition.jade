@@ -1,26 +1,9 @@
 form#js-calculate-form(method="post",action="/calculate")
   .am-g
     .am-u-sm-3
-      select(data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}",name="category")
-        option(value="0") 请选择类别
-        option(value="1") 头盔
-        option(value="2") 胸甲
-        option(value="3") 手腕
-        option(value="4") 手套
-        option(value="5") 胸甲
-        option(value="6") 腰带
-        option(value="7") 长靴
+      select(data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}",name="category",id="category")
     .am-u-sm-3
-      select(data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}",name="level")
-        option(value="0") 请选择级别
-        option(value="1") 新手
-        option(value="2") 学徒
-        option(value="3") 熟工
-        option(value="4") 工匠
-        option(value="5") 技师
-        option(value="6") 巧匠
-        option(value="7") 专家
-        option(value="8") 名将
+      select(data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}",name="level",id="level")
     .am-u-sm-3
       select(data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}",name="number")
         option(value="0") 请选择数量
